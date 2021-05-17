@@ -1,0 +1,37 @@
+--Bibliotecas utilizadas
+npm i -s express body-parser cors consign
+
+--Segurança 
+npm i -s bcrypt-nodejs jwt-simple passport passport-jwt
+
+--Parte de Db / pg=driver do postgree
+npm i -s knex pg
+
+
+--Laucher
+npm i -s nodemon
+
+
+--Instalar o kenx global na maquina(gerenciador de db para js)
+npm i knex -g
+
+--acessar o postgres
+psql -U postgres
+
+--Conectar no banco
+\c surfroute
+
+--listar as tabelas
+\dt
+
+--Criar migrations:
+Knex migrate:make create_table_users
+
+--Criar a migração para o banco
+knex migrate:latest
+
+--dar rollback para o banco
+knex migrate:rollback
+
+--Biblioteca para envio de email
+npm install nodemailer
